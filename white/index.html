@@ -2,63 +2,76 @@
 <html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Industria De Moveis Lustro Ltda</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Segoe UI', Arial, sans-serif;background:#fff;color:#1a1a2e;line-height:1.7}
-header{padding:24px 40px;border-bottom:1px solid #dde4ef;display:flex;align-items:center;justify-content:space-between}
-.logo{font-family:Georgia, 'Times New Roman', serif;font-size:1rem;font-weight:700;color:#1a1a2e}
+body{font-family:Arial, sans-serif;background:#fafafa;color:#444;line-height:1.6}
+header{background:#ffffff;border-bottom:3px solid #c0392b;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:10}
+header h1{font-family:'Arial Black', 'Helvetica Neue', sans-serif;font-size:1rem;font-weight:900;color:#1a1a1a;letter-spacing:.02em}
 nav ul{list-style:none;display:flex;gap:32px}
-nav a{color:#555;text-decoration:none;font-size:.85rem}
-nav a:hover{color:#1565c0}
-.hero{max-width:720px;margin:80px auto;padding:0 40px;text-align:center}
-.hero-tag{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#1565c0;display:block;margin-bottom:20px}
-.hero h1{font-family:Georgia, 'Times New Roman', serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.2;color:#1a1a2e;margin-bottom:20px}
-.hero h1 em{color:#1565c0;font-style:normal}
-.hero p{color:#555;font-size:1rem;line-height:1.85;margin-bottom:32px}
-.hero-cta{display:inline-block;border:2px solid #1565c0;color:#1565c0;padding:12px 36px;text-decoration:none;font-weight:600;font-size:.88rem;letter-spacing:.04em;transition:all .2s}
-.hero-cta:hover{background:#1565c0;color:white}
-.rule{border:none;border-top:1px solid #dde4ef;margin:0 40px}
-.section{max-width:720px;margin:72px auto;padding:0 40px}
-.sec-label{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#1565c0;display:block;margin-bottom:10px}
-.section h2{font-family:Georgia, 'Times New Roman', serif;font-size:1.5rem;font-weight:700;color:#1a1a2e;margin-bottom:40px;padding-bottom:12px;border-bottom:2px solid #1565c0}
-.srv-list{list-style:none}
-.srv-list li{padding:20px 0;border-bottom:1px solid #dde4ef;display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:baseline}
-.srv-list li:last-child{border-bottom:none}
-.srv-list strong{font-family:Georgia, 'Times New Roman', serif;font-size:.95rem;color:#1a1a2e}
-.srv-list span{font-size:.88rem;color:#555;line-height:1.7}
-.sobre-text p{color:#555;line-height:1.9;margin-bottom:16px;font-size:.95rem}
-.meta-list{margin-top:36px;list-style:none}
-.meta-list li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #dde4ef;font-size:.88rem}
-.meta-list li:last-child{border-bottom:none}
-.meta-list .k{color:#555}
-.meta-list .v{color:#1a1a2e;font-weight:600}
-.contato-info p{font-size:.9rem;color:#555;margin-bottom:10px;line-height:1.6}
-.contato-info a{color:#1565c0;text-decoration:none}
-footer{background:#f0f4fb}
-footer{color:#7a8aaa;text-align:center;padding:32px 40px;font-size:.78rem;border-top:1px solid #dde4ef}
-@media(max-width:600px){.srv-list li{grid-template-columns:1fr;gap:6px}nav{display:none}}
+nav a{color:#c0392b;text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+nav a:hover{color:#922b21}
+.hero{display:grid;grid-template-columns:1fr 380px;min-height:480px}
+.hero-left{background:#fafafa;padding:64px 40px 64px 40px;display:flex;flex-direction:column;justify-content:center}
+.hero-eyebrow{font-size:.75rem;letter-spacing:.18em;color:#c0392b;text-transform:uppercase;font-weight:700;margin-bottom:16px}
+.hero-left h2{font-family:'Arial Black', 'Helvetica Neue', sans-serif;font-size:2.6rem;font-weight:900;color:#1a1a1a;line-height:1.15;margin-bottom:20px}
+.hero-left h2 em{color:#c0392b;font-style:normal}
+.hero-left p{color:#444;font-size:1rem;max-width:480px;margin-bottom:32px;line-height:1.75}
+.hero-cta{display:inline-block;background:#c0392b;color:white;padding:14px 32px;text-decoration:none;font-weight:700;font-size:.9rem;letter-spacing:.04em;text-transform:uppercase;transition:background .2s}
+.hero-cta:hover{background:#922b21}
+.hero-right{background:#c0392b;color:#ffffff;padding:48px 36px;display:flex;flex-direction:column;justify-content:center;gap:24px}
+.hero-right h3{font-family:'Arial Black', 'Helvetica Neue', sans-serif;font-size:1rem;font-weight:700;opacity:.7;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+.info-item{border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:16px}
+.info-item:last-child{border-bottom:none;padding-bottom:0}
+.info-label{font-size:.75rem;opacity:.65;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.info-value{font-size:1rem;font-weight:600}
+.section{max-width:960px;margin:72px auto;padding:0 40px}
+.section-label{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:#c0392b;font-weight:700;margin-bottom:12px}
+.section h2{font-family:'Arial Black', 'Helvetica Neue', sans-serif;font-size:1.7rem;font-weight:900;color:#1a1a1a;margin-bottom:40px}
+.srv-row{display:flex;gap:24px;align-items:flex-start;padding:24px 0;border-bottom:1px solid #fadbd8}
+.srv-row:last-child{border-bottom:none}
+.srv-num{font-family:'Arial Black', 'Helvetica Neue', sans-serif;font-size:2rem;font-weight:900;color:#c0392b;opacity:.3;min-width:56px;line-height:1}
+.srv-body h4{font-family:'Arial Black', 'Helvetica Neue', sans-serif;font-size:1rem;font-weight:700;color:#1a1a1a;margin-bottom:6px}
+.srv-body p{font-size:.9rem;color:#444;line-height:1.65}
+.sobre-grid{display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start}
+.sobre-text p{color:#444;line-height:1.85;margin-bottom:16px}
+.stats-panel{background:#fadbd8;border-left:4px solid #c0392b;padding:28px}
+.stats-panel p{font-size:.88rem;color:#444;margin-bottom:10px;line-height:1.5}
+.stats-panel p strong{color:#922b21;display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em}
+.contato-box{background:#fadbd8;border-left:4px solid #c0392b;padding:32px;max-width:560px}
+.contato-box p{font-size:.95rem;color:#444;margin-bottom:12px;line-height:1.6}
+.contato-box a{color:#c0392b;text-decoration:none;font-weight:600}
+footer{background:#1a1a1a;color:#888;padding:28px 40px;display:flex;justify-content:space-between;align-items:center;font-size:.8rem;margin-top:80px}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-right{display:none}.sobre-grid{grid-template-columns:1fr}nav{display:none}}
 </style></head><body>
-<header><span class="logo">Industria De Moveis Lustro Ltda</span><nav><ul><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul></nav></header>
+<header><h1>Industria De Moveis Lustro Ltda</h1><nav><ul><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul></nav></header>
 <div id="hero" class="hero">
-  <span class="hero-tag">Móveis · Madeira · Qualidade · Gramado</span>
-  <h1>Móveis em <em>madeira</em> de <em>qualidade</em> para seu espaço</h1>
-  <p>A Indústria de Móveis Lustro fabrica móveis sofisticados com predominância de madeira, combinando design e durabilidade. Atendemos clientes que buscam móveis personalizados e de alta qualidade para ambientes residenciais e comerciais.</p>
-  <a href="#contato" class="hero-cta">Entre em contato</a>
+  <div class="hero-left">
+    <p class="hero-eyebrow">Móveis · Madeira · Qualidade · Gramado</p>
+    <h2>Móveis em <em>madeira</em> de <em>qualidade</em> para seu lar</h2>
+    <p>A Indústria de Móveis Lustro fabrica peças de mobiliário com predominância de madeira, combinando tradição e design. Somos referência em Gramado, criando móveis que transformam espaços residenciais e comerciais.</p>
+    <a href="#contato" class="hero-cta">Solicitar atendimento</a>
+  </div>
+  <div class="hero-right">
+    <h3>Industria De Moveis Lustro Ltda</h3>
+    <div class="info-item"><div class="info-label">Fundação</div><div class="info-value">1976</div></div>
+    <div class="info-item"><div class="info-label">Localização</div><div class="info-value">Gramado — RS</div></div>
+    
+    <div class="info-item"><div class="info-label">CNPJ</div><div class="info-value">88.887.195/0001-84</div></div>
+  </div>
 </div>
-<hr class="rule">
-<div id="servicos" class="section"><span class="sec-label">Serviços</span><h2>Como podemos ajudar</h2><ul class="srv-list"><li><strong>Móveis Residenciais</strong><span>Peças de madeira elegantes e funcionais para salas, quartos, cozinhas e áreas externas.</span></li><li><strong>Móveis Corporativos</strong><span>Soluções em madeira para escritórios, lojas e espaços comerciais com design profissional.</span></li><li><strong>Projetos Personalizados</strong><span>Criamos móveis sob medida conforme sua necessidade, estilo e dimensões específicas.</span></li><li><strong>Acabamento Premium</strong><span>Acabamentos refinados que preservam a beleza natural e a longevidade da madeira.</span></li></ul></div>
-<hr class="rule">
-<div id="sobre" class="section"><span class="sec-label">Sobre a empresa</span><h2>Sobre nós</h2>
-<div class="sobre-text"><p>A Industria De Moveis Lustro Ltda é especializada na fabricação de móveis em madeira, atuando em Gramado-RS com mais de duas décadas de experiência no mercado. Nossa paixão pela qualidade se reflete em cada projeto, transformando madeiras nobres em peças funcionais e aestheticamente impecáveis.</p><p>Nos diferenciamos pelo comprometimento com detalhes, uso de matérias-primas selecionadas e processos artesanais que garantem móveis duráveis e com identidade própria. Cada cliente é único, e nossas soluções personalizadas refletem seu estilo e necessidades específicas.</p></div>
-<ul class="meta-list">
-  <li><span class="k">Razão Social</span><span class="v">Industria De Moveis Lustro Ltda</span></li>
-  <li><span class="k">CNPJ</span><span class="v">88.887.195/0001-84</span></li>
-  <li><span class="k">Estado</span><span class="v">Rio Grande do Sul</span></li>
-  <li><span class="k">Fundação</span><span class="v">1976</span></li>
-  <li><span class="k">Situação</span><span class="v">✅ Ativa</span></li>
-</ul></div>
-<hr class="rule">
-<div id="contato" class="section"><span class="sec-label">Fale conosco</span><h2>Fale conosco</h2>
-<p style="color:#555;margin-bottom:24px;font-size:.95rem">Estamos disponíveis para apresentar nossas soluções.</p>
-<div class="contato-info"><p><strong>Telefone:</strong> <a href="tel:+55542861205">542861205</a></p><p><strong>Endereço:</strong> R. Antonio Sobrinho, 35, Mato Queimado, Gramado — RS, CEP 95670-000</p></div></div>
-<footer><p>Industria De Moveis Lustro Ltda · CNPJ 88.887.195/0001-84</p><p>© 1976–2026 Industria De Moveis Lustro Ltda. Todos os direitos reservados.</p><script type="text/javascript" src="https://fg.wellnessreimagined.lat/track.js?rtkcmpid=6a7bb7082869e5a425fe8158"></script>
-</footer>
+<div id="servicos" class="section"><p class="section-label">Soluções</p><h2>O que entregamos</h2><div class="srv-row"><div class="srv-num">01</div><div class="srv-body"><h4>Fabricação de Móveis Residenciais</h4><p>Criamos peças exclusivas em madeira para sala, quarto, cozinha e áreas integradas, adaptadas ao seu estilo.</p></div></div><div class="srv-row"><div class="srv-num">02</div><div class="srv-body"><h4>Móveis Planejados</h4><p>Projetos personalizados que maximizam espaço e funcionalidade, respeitando características arquitetônicas únicas.</p></div></div><div class="srv-row"><div class="srv-num">03</div><div class="srv-body"><h4>Móveis Comerciais</h4><p>Soluções em madeira para escritórios, lojas e estabelecimentos que buscam durabilidade e elegância.</p></div></div><div class="srv-row"><div class="srv-num">04</div><div class="srv-body"><h4>Restauração e Acabamentos</h4><p>Serviços de restauro e acabamento fino em madeira, preservando a beleza de peças clássicas e contemporâneas.</p></div></div></div>
+<div id="sobre" class="section"><p class="section-label">Sobre a empresa</p><h2>Sobre nós</h2>
+<div class="sobre-grid">
+  <div class="sobre-text"><p>A Indústria de Móveis Lustro é uma empresa familiar estabelecida em Gramado, especializada na fabricação de móveis com predominância de madeira. Há anos, desenvolvemos peças que aliam funcionalidade, estética e durabilidade, atendendo clientes que valorizam qualidade e artesanato.</p><p>Nosso diferencial está no domínio das técnicas tradicionais de marcenaria combinadas com design contemporâneo. Utilizamos madeiras selecionadas e processos cuidadosos para garantir móveis que transcendem tendências, criando espaços mais acolhedores e marcantes.</p></div>
+  <div class="stats-panel">
+    <p><strong>Razão Social</strong>Industria De Moveis Lustro Ltda</p>
+    <p><strong>CNPJ</strong>88.887.195/0001-84</p>
+    <p><strong>Estado</strong>Rio Grande do Sul</p>
+    <p><strong>Situação</strong>✅ Ativa</p>
+  </div>
+</div></div>
+<div id="contato" class="section"><p class="section-label">Fale conosco</p><h2>Entre em contato</h2>
+<div class="contato-box">
+  <p>Nosso time responde rapidamente. Envie sua mensagem.</p>
+  <p><strong>Telefone:</strong> <a href="tel:+55542861205">542861205</a></p><p><strong>Endereço:</strong> R. Antonio Sobrinho, 35, Mato Queimado, Gramado — RS, CEP 95670-000</p>
+</div></div>
+<footer><span>Industria De Moveis Lustro Ltda — CNPJ 88.887.195/0001-84</span><span>© 1976–2026 Industria De Moveis Lustro Ltda</span></footer>
 </body></html>
